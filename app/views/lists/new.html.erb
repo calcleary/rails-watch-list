@@ -1,7 +1,6 @@
   <h1>Create your list</h1>
 
-  <%= simple_form_for(@lists) do |f| %>
+  <%= simple_form_for(@list) do |f| %>
     <%= f.input :name, placeholder: 'Add a list name' %>
-    <%= f.input :imageUrl, placeholder: 'Add an image URL' %>
-    <%= f.submit "Create", class: "btn btn-primary" %>
+    <%= f.submit "Create a list", class: "btn btn-primary" %>
   <% end %>
